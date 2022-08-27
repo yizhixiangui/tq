@@ -14,7 +14,7 @@ birthday = os.getenv('BIRTHDAY')
 app_id = os.getenv('APP_ID')
 app_secret = os.getenv('APP_SECRET')
 
-user_ids = ["oB89-6bTBX1ulmojNqldixAqvUKA","oB89-6RqPdbJMWoO51clh9gdPR3Y"]
+user_ids = os.getenv('USER_ID', '').split("\n")
 template_id = os.getenv('TEMPLATE_ID')
 
 if app_id is None or app_secret is None:
